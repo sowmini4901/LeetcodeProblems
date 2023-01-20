@@ -17,6 +17,7 @@ class Solution {
            }
 
         }
+        
         String res = bulls+"A"+cows+"B";
         return res;
     }

@@ -9,13 +9,14 @@ class Solution {
            hm.put(key,value);
        } 
        String result="";
-       ArrayList<String> al = new ArrayList<String>(hm.values());
-       ArrayList<String> al2 = new ArrayList<String>(hm.keySet());
-       for(int i=0;i<al.size();i++){
-           if(!al2.contains(al.get(i))){
-            result = al.get(i);
+       ArrayList<String> alValues = new ArrayList<String>(hm.values());
+       ArrayList<String> alKeys = new ArrayList<String>(hm.keySet());
+       for(int i=0;i<alValues.size();i++){
+           if(!alKeys.contains(alValues.get(i))){
+            result = alValues.get(i);
            }
        }
+       
        return result;
     }
 }
